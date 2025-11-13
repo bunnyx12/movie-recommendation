@@ -75,3 +75,4 @@ CineVector/
 ├── poster_not_found.png      # Fallback poster image
 │
 └── README.md                 # This file
+
