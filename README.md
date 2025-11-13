@@ -66,21 +66,21 @@ Environment	.env for API keys
 ---
 ##📁 Project Structure
 CineVector/
-│
-├── **chroma_db/**                     # Saved vector embeddings (DO NOT DELETE)
-│   ├── index/
-│   ├── collections/
-│   └── uuid-xxx/
-│
-├── **data/**
-│   ├── movies_with_posters.csv        # Dataset with posters & metadata
-│   ├── tagged_overview.txt            # Overview text used for embeddings
-│   └── poster_not_found.png           # Fallback poster image
-│
-├── **dashboard.py**                   # Gradio movie recommendation app
-├── **requirements.txt**               # Python dependencies
-├── **README.md**                      # Documentation
-└── **.env**                           # API keys (ignored in Git)
+-│
+-├── **chroma_db/**                     # Saved vector embeddings (DO NOT DELETE)
+-│   ├── index/
+-│   ├── collections/
+-│   └── uuid-xxx/
+-│
+-├── **data/**
+-│   ├── movies_with_posters.csv        # Dataset with posters & metadata
+-│   ├── tagged_overview.txt            # Overview text used for embeddings
+-│   └── poster_not_found.png           # Fallback poster image
+-│
+-├── **dashboard.py**                   # Gradio movie recommendation app
+-├── **requirements.txt**               # Python dependencies
+-├── **README.md**                      # Documentation
+-└── **.env**                           # API keys (ignored in Git)
 
 ---
 
