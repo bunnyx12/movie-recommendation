@@ -64,15 +64,15 @@ Backend	Python
 Posters	TMDB image URLs
 Environment	.env for API keys
 📁 Project Structure
-CineVector/
-│
-├── chroma_db/                # Precomputed embedding index (important)
-├── movies_with_posters.csv   # Main movie dataset
-├── tagged_overview.txt       # ID + overview lines for embeddings
-│
-├── dashboard.py              # Main Gradio app
-├── requirements.txt          # Dependencies for deployment
-├── poster_not_found.png      # Fallback poster image
-│
-└── README.md                 # This file
+    CineVector/
+    │
+    ├── chroma_db/                # Precomputed embedding index (important)
+    ├── movies_with_posters.csv   # Main movie dataset
+    ├── tagged_overview.txt       # ID + overview lines for embeddings
+    │
+    ├── dashboard.py              # Main Gradio app
+    ├── requirements.txt          # Dependencies for deployment
+    ├── poster_not_found.png      # Fallback poster image
+    │
+    └── README.md                 # This file
 
