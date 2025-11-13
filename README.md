@@ -8,79 +8,36 @@ Using vector embeddings, semantic similarity search, and an elegant Gradio dashb
 “Something funny with a happy ending”
 “A dark mystery detective story”
 
-🚀 Features
-🔍 Semantic Search
 
-CineVector uses OpenAI embeddings and ChromaDB to find movies based on the meaning of your query.
-
-🎭 Emotion-Aware Filtering
-
-Recommendations can be sorted by emotional tones:
-
-Happy
-
-Sad
-
-Suspense
-
-Angry
-
-Surprising
-
-🎬 Genre-Based Filtering
-
-Filter by simplified genres:
-
-Fiction
-
-Non-Fiction
-
-🖼️ High-Quality Posters
-
-Each movie displays its poster using TMDB image base URLs.
-Missing posters are replaced with a custom “Poster Not Found” image.
-
-⚡ Fast Performance
-
-All embeddings are pre-computed and stored locally, so no OpenAI API calls occur during recommendation — fast & cost-free.
-
-🌐 Easy-to-use Dashboard
-
-Powered by Gradio, offering:
-
-Search box
-
-Dropdowns for genre & tone
-
-A gallery of poster-based recommendations
 ---
-##🏗️ Tech Stack
-Component	Technology
-Vector Search	ChromaDB
-Embeddings	OpenAI Embeddings
-UI	Gradio
-Data Processing	Pandas, NumPy
-Backend	Python
-Posters	TMDB image URLs
-Environment	.env for API keys
+
+## 🚀 Features
+
+- 🔎 **Semantic search** — Natural-language queries (not keyword matching)  
+- 🎭 **Emotion-aware sorting** — Filter/sort by `joy`, `sadness`, `fear`, `anger`, `surprise`  
+- 🗂️ **Genre filtering** — Simple genre buckets (e.g., Fiction / Non-Fiction)  
+- 🖼️ **Poster gallery** — TMDB posters or a fallback **Poster Not Found** image  
+- ⚡ **Fast & cost-efficient** — Embeddings persisted locally so runtime queries do **not** use OpenAI credits
+
 ---
-##📁 Project Structure
-CineVector/
--│
--├── **chroma_db/**                     # Saved vector embeddings (DO NOT DELETE)
--│   ├── index/
--│   ├── collections/
--│   └── uuid-xxx/
--│
--├── **data/**
--│   ├── movies_with_posters.csv        # Dataset with posters & metadata
--│   ├── tagged_overview.txt            # Overview text used for embeddings
--│   └── poster_not_found.png           # Fallback poster image
--│
--├── **dashboard.py**                   # Gradio movie recommendation app
--├── **requirements.txt**               # Python dependencies
--├── **README.md**                      # Documentation
--└── **.env**                           # API keys (ignored in Git)
+
+## 🗂️ Project structure
+- CineVector/
+- │
+- ├── **chroma_db/**                     # Saved vector embeddings (DO NOT DELETE)
+- │   ├── index/
+- │   ├── collections/
+- │   └── uuid-xxx/
+- │
+- ├── **data/**
+- │   ├── movies_with_posters.csv        # Dataset with posters & metadata
+- │   ├── tagged_overview.txt            # Overview text used for embeddings
+- │   └── poster_not_found.png           # Fallback poster image
+- │
+- ├── **dashboard.py**                   # Gradio movie recommendation app
+- ├── **requirements.txt**               # Python dependencies
+- ├── **README.md**                      # Documentation
+- └── **.env**                           # API keys (ignored in Git)
 
 ---
 
