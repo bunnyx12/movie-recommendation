@@ -53,8 +53,8 @@ Search box
 Dropdowns for genre & tone
 
 A gallery of poster-based recommendations
-
-🏗️ Tech Stack
+---
+##🏗️ Tech Stack
 Component	Technology
 Vector Search	ChromaDB
 Embeddings	OpenAI Embeddings
@@ -64,7 +64,7 @@ Backend	Python
 Posters	TMDB image URLs
 Environment	.env for API keys
 ---
-📁 Project Structure
+##📁 Project Structure
 CineVector/
 │
 ├── chroma_db/                # Precomputed embedding index (important)
